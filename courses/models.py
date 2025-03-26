@@ -1,6 +1,8 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 class Course(models.Model):
+    objects = None
     title = models.CharField(max_length=255)
     description = models.TextField()
     category = models.CharField(max_length=100)
@@ -23,3 +25,24 @@ class Lesson(models.Model):
 
     def __str__(self):
         return f"{self.course.title} - {self.title}"
+
+class UserProfile(models.Model):
+    objects = None
+    ROLE_CHOICES = [
+        ('student', 'Student'),
+        ('admin', 'Admin'),
+    ]
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+    bio = models.TextField(blank=True, null=True)
+    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='student')
+
+    profile_image = models.ImageField(
+        upload_to='profile_images/',
+        blank=True,
+        null=True,
+        default='static/images/inejihimage.jpeg '
+    )
+    def __str__(self):
+        return self.user.username
