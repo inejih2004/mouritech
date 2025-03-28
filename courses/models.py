@@ -15,6 +15,7 @@ class Course(models.Model):
         return self.title
 
 class Lesson(models.Model):
+    objects = None
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='lessons')
     title = models.CharField(max_length=255)
     content = models.TextField()

@@ -1,0 +1,76 @@
+/* FORM CONTAINER */
+.container {
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+
+/* FORM HEADER */
+h2.text-center {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+.form-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* INPUT FIELDS */
+.form-control {
+    border: 2px solid #007bff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* INPUT HOVER & FOCUS EFFECT */
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 8px rgba(0, 91, 187, 0.5);
+    outline: none;
+}
+
+/* FILE UPLOAD FIELD */
+input[type="file"] {
+    padding: 8px;
+    border: none;
+    background: #f8f9fa;
+}
+
+/* SUBMIT BUTTON */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* HOVER & ACTIVE EFFECTS FOR BUTTON */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:active {
+    background-color: #004099;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -144,8 +144,9 @@ h2.text-primary {
     border: none;
 }
 
+/* Optional: Add padding to the right section to account for the fixed card */
 .col-md-9 {
-    padding-right: 300px;
+    padding-right: 300px; /* Adjust based on card's width */
 }
 /* Profile Card */
 .sidebar2 {
