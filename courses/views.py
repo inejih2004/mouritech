@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from pyexpat.errors import messages
-
 from courses.forms import UserProfileForm, LessonForm
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
@@ -77,3 +76,4 @@ def lesson_detail(request, lesson_id):
         'previous_lesson': previous_lesson,
         'next_lesson': next_lesson
     })
+

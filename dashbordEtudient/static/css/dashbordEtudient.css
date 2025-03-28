@@ -1,0 +1,69 @@
+#main{
+    background-color: #3030 !important;
+   
+}
+#sidebar{
+    background-color:#fff !important;
+    color: #000 !important;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+ 
+}
+#link a{
+    color: #000 !important;
+   
+}
+#profile{
+    background: #F5F5DC !important;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    height: 250px;
+    border-radius: 9px;
+}
+#profile h4,p{
+   color: #000;
+}
+#profile button{
+    color: #fff;
+    margin-top: 5px;
+    background-color: #FFA500;
+    border:1px solid #FFA500;
+    padding: 6px 6px;
+}
+#profile button:hover{
+    background-color: #ff8c00;
+   
+
+}
+#img-bg{
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+      url(/static/images/image_background.jpg);
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+      width: 100%;
+}
+#img-bg h3{
+    margin-top: 10px;
+    font-weight: bold;
+}
+#img-bg button{
+    color: #fff;
+    margin-top: 5px;
+    background-color: #FFA500;
+    border:1px solid #FFA500;
+    padding: 6px 18px;
+}
+#img-bg button:hover{
+   background-color: #ff8c00;
+
+}
+#video h4{
+     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.2);;
+}
+#btn-card a{
+    background: #2E8B57;
+    border: 1px solid #2E8B57;
+}
+#btn-card a:hover{
+    background: #267347;
+}
+
+
